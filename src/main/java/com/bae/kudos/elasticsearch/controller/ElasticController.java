@@ -1,6 +1,6 @@
 package com.bae.kudos.elasticsearch.controller;
 
-import com.bae.kudos.elasticsearch.persistance.Feedback;
+import com.bae.kudos.elasticsearch.model.Feedback;
 
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
