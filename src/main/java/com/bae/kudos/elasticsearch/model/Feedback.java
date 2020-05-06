@@ -7,7 +7,9 @@ public class Feedback {
 
     private Integer rating;
 
-    private String feedbackBody;
+    private String positiveComment;
+
+    private String negativeComment;
 
     public Feedback() {
 
@@ -21,12 +23,22 @@ public class Feedback {
         this.rating = rating;
     }
 
-    public String getFeedbackBody() {
-        return feedbackBody;
+    public String getPositiveComment() {
+        return positiveComment;
     }
 
-    public void setFeedbackBody(String feedbackBody) {
-        this.feedbackBody = feedbackBody;
+    public void setPositiveComment(String positiveComment) {
+        this.positiveComment = positiveComment;
     }
+
+    public String getNegativeComment() {
+        return negativeComment;
+    }
+
+    public void setNegativeComment(String negativeComment) {
+        this.negativeComment = negativeComment;
+    }
+
+    
 
 }
