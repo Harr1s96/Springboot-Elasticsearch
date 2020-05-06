@@ -1,13 +1,9 @@
 package com.bae.kudos.elasticsearch.model;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 @Document(indexName = "kudos-feedback", type = "feedback")
 public class Feedback {
-
-    @Id
-    private Long id;
 
     private Integer rating;
 
@@ -15,14 +11,6 @@ public class Feedback {
 
     public Feedback() {
 
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public Integer getRating() {

@@ -22,7 +22,6 @@ public class ElasticController {
     public String saveFeedback(@RequestBody Feedback feedback) {                         
         
         IndexQuery indexQuery = new IndexQueryBuilder()
-            .withId(feedback.getId().toString())
             .withObject(feedback)
             .build();
         
